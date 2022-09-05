@@ -13,4 +13,20 @@ coins = [5, 7, 1, 1, 2, 3, 22]
 Sample Output
 20 
 */
-class 
+class Solution {
+public:
+    int nonConstructableChange(vector<int>& nums) 
+    {
+        sort(nums.begin(),nums.end());
+        int change=0;
+        for(int i=0;i<nums.size();i++) 
+        {
+          if(nums[i]>change+1) return change+1;
+          else
+          {
+            change = change+nums[i];
+            }
+        }
+      return change+1;
+        
+    }
