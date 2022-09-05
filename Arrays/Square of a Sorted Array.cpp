@@ -1,4 +1,4 @@
-Approch : 1
+//Approch : 1
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) 
@@ -17,7 +17,7 @@ TC :O(NlogN)
 SC :O(1)
 */
 
-Approch :2
+//Approch :2
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) 
