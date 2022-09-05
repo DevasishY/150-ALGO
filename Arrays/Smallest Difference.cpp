@@ -23,6 +23,7 @@ class Solution
       int firstnum  = a[idxone];
       int secondnum = b[idxtwo];
       if(firstnum==secondnum) return v.push_back({firstnum,secondnum});
+      v.clear();
       else if(firstnum>secondnum)
       {
         current = firstnum-secondnum;
@@ -45,3 +46,8 @@ class Solution
     
   }
 };
+
+/*
+TC : O(m log m + n log n)
+SC : O(1)
+*/
