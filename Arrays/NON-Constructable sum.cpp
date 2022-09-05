@@ -28,5 +28,9 @@ public:
             }
         }
       return change+1;
-        
     }
+};
+/*
+TC : O(NlogN)
+SC : O(1)
+*/
